@@ -38,7 +38,7 @@ document.querySelectorAll("[data-i18n]").forEach((element) => {
 const translations = {
   ja: {
     brandSub: "神様雑学チャンネル",
-    heroTitle: "神ちゃまたちが案内する、\n神様と神社の物語。"
+    heroTitle: '<span class="hero-title-line"><span class="hero-red">神</span>ちゃまたちが案内</span><span class="hero-title-line">神様と神社の物語。</span>'
   },
   en: {
     brandName: "Yaoyorozu no Kamichama",
@@ -74,7 +74,9 @@ const translations = {
     stamp1: "Blessings",
     stamp2: "Good work",
     stamp3: "Good luck",
-    stamp4: "See you"
+    stamp4: "See you",
+    seoName: "????",
+    seoKami: "????"
   }
 };
 
@@ -103,13 +105,6 @@ function setLanguage(lang) {
 
 document.querySelectorAll(".lang-button").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
-});
-
-document.querySelectorAll("a[download]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.location.href = link.href;
-  });
 });
 
 setLanguage("ja");
