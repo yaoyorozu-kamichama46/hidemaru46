@@ -12,69 +12,83 @@
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="八百万の神ちゃま トップへ">
       <span class="brand-mark">神</span>
-      <span><strong>八百万の神ちゃま</strong><small>神社雑学チャンネル</small></span>
+      <span>
+        <strong data-i18n="brandName">八百万の神ちゃま</strong>
+        <small data-i18n="brandSub">神様雑学チャンネル</small>
+      </span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav id="site-nav" class="site-nav" aria-label="メインナビゲーション">
-      <a href="index.html#characters">神ちゃま</a>
-      <a href="encyclopedia.html">神様図鑑</a>
+      <a href="index.html#characters" data-i18n="navCharacters">神ちゃま</a>
+      <a href="encyclopedia.html" data-i18n="navEncyclopedia">神様図鑑</a>
       <a href="index.html#youtube">YouTube</a>
-      <a href="index.html#line">LINEスタンプ</a>
+      <a href="index.html#line" data-i18n="navLine">LINEスタンプ</a>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="lang-button active" type="button" data-lang="ja">日本語</button>
+        <button class="lang-button" type="button" data-lang="en">English</button>
+      </div>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-logo"><img src="assets/Y_kamicyama01.jpg" alt="八百万の神ちゃま公式ロゴと神様キャラクターたち"></div>
+      <div class="hero-logo">
+        <img src="assets/Y_kamicyama01.jpg" alt="八百万の神ちゃま公式ロゴと神様キャラクターたち">
+      </div>
       <div class="hero-content">
         <p class="eyebrow">Shrine Trivia Channel</p>
-        <h1>神社のふしぎを、神ちゃまと楽しく。</h1>
-        <p>鳥居、参拝作法、御朱印、神様の由来まで。知るほどお参りが楽しくなる雑学を、やさしくテンポよく紹介します。</p>
-        <div class="hero-actions"><a class="button primary" href="#youtube">動画を見る</a><a class="button secondary" href="encyclopedia.html">神様図鑑へ</a></div>
+        <h1 class="hero-title" data-i18n="heroTitle">神ちゃまたちが案内する、<br>神様と神社の物語。</h1>
+        <p data-i18n="heroLead">鳥居、参拝作法、御朱印、神様の由来まで。知るほどお参りが楽しくなる雑学を、やさしくテンポよく紹介します。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#youtube" data-i18n="watchVideo">動画を見る</a>
+          <a class="button secondary" href="encyclopedia.html" data-i18n="goEncyclopedia">神様図鑑へ</a>
+          <a class="button secondary" href="yamayorozu-site-github.zip" download>ZIPダウンロード</a>
+        </div>
       </div>
     </section>
 
     <section class="intro" aria-label="チャンネルの特徴">
-      <div><span>01</span><strong>神社の作法</strong><p>参拝前に知っておきたい基本を、短くわかりやすく。</p></div>
-      <div><span>02</span><strong>神様の物語</strong><p>古事記や地域信仰の入り口を、親しみやすい言葉で。</p></div>
-      <div><span>03</span><strong>おでかけ雑学</strong><p>神社巡りで見つけたい見どころや豆知識を紹介。</p></div>
+      <div><span>01</span><strong data-i18n="intro1Title">神社の作法</strong><p data-i18n="intro1Text">参拝前に知っておきたい基本を、短くわかりやすく。</p></div>
+      <div><span>02</span><strong data-i18n="intro2Title">神様の物語</strong><p data-i18n="intro2Text">古事記や地域信仰の入り口を、親しみやすい言葉で。</p></div>
+      <div><span>03</span><strong data-i18n="intro3Title">おでかけ雑学</strong><p data-i18n="intro3Text">神社巡りで見つけたい見どころや豆知識を紹介。</p></div>
     </section>
 
     <section id="characters" class="section">
-      <div class="section-heading"><p class="eyebrow">Characters</p><h2>神ちゃま紹介</h2></div>
+      <div class="section-heading"><p class="eyebrow">Characters</p><h2 data-i18n="charactersTitle">神ちゃま紹介</h2></div>
       <div class="character-grid">
-        <article class="character-card"><div class="avatar image-avatar"><img src="assets/amateru-face.jpeg" alt="アマテルちゃんの顔"></div><h3>アマテルちゃん</h3><p class="kami-name">天照大御神</p><p>太陽みたいに明るい中心キャラ。神社の基本や、光にまつわる神話をやさしく案内します。</p><dl><dt>担当</dt><dd>開運、神社の基本</dd><dt>好き</dt><dd>朝日、鏡、きらきらしたもの</dd></dl><a class="detail-button" href="character-amateru.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar image-avatar"><img src="assets/ichi-face.jpeg" alt="イチちゃんの顔"></div><h3>イチちゃん</h3><p class="kami-name">市杵嶋姫命</p><p>水辺と芸能にゆかりのある、上品で華やかなキャラ。弁天さまの話題も得意です。</p><dl><dt>担当</dt><dd>芸能、水の信仰</dd><dt>好き</dt><dd>琵琶、湖、白い花</dd></dl><a class="detail-button" href="character-ichi.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar blue">宇</div><h3>ウカちゃん</h3><p class="kami-name">宇迦之御魂神</p><p>稲穂を大切にする商売繁盛の案内役。稲荷社や朱色の鳥居の豆知識を届けます。</p><dl><dt>担当</dt><dd>商売繁盛、五穀豊穣</dd><dt>好き</dt><dd>稲穂、朱色の鳥居</dd></dl><a class="detail-button" href="character-uka.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar red">鈿</div><h3>ウズメちゃん</h3><p class="kami-name">天鈿女命</p><p>笑いと舞で場を明るくするムードメーカー。神楽や芸能の話を楽しく紹介します。</p><dl><dt>担当</dt><dd>芸能、神楽、笑い</dd><dt>好き</dt><dd>鈴、舞台、拍手</dd></dl><a class="detail-button" href="character-uzume.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar violet">国</div><h3>オオクニヌシ</h3><p class="kami-name">大国主命</p><p>縁結びと国づくりに詳しい頼れる兄貴分。人と人をつなぐ話が得意です。</p><dl><dt>担当</dt><dd>縁結び、国づくり</dd><dt>好き</dt><dd>出雲、白兎、結び紐</dd></dl><a class="detail-button" href="character-ookuninushi.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar teal">雷</div><h3>カモちゃん</h3><p class="kami-name">賀茂別雷大神</p><p>雷のように元気な京都好きキャラ。賀茂社や厄除け、清めの話題で活躍します。</p><dl><dt>担当</dt><dd>厄除け、雷の信仰</dd><dt>好き</dt><dd>葵、清流、雷鳴</dd></dl><a class="detail-button" href="character-kamo.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar gold">菊</div><h3>くくりん</h3><p class="kami-name">菊理媛</p><p>ご縁や仲直りをそっと結ぶ聞き上手。白山信仰やむすびの雑学を担当します。</p><dl><dt>担当</dt><dd>縁結び、和合</dd><dt>好き</dt><dd>白山、結び目、静かな雪</dd></dl><a class="detail-button" href="character-kukurin.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar pink">咲</div><h3>サクちゃん</h3><p class="kami-name">木花開耶姫命</p><p>桜のように華やかな山の姫キャラ。富士山、花、安産にまつわる話を届けます。</p><dl><dt>担当</dt><dd>山、花、安産</dd><dt>好き</dt><dd>桜、富士山、春風</dd></dl><a class="detail-button" href="character-saku.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar navy">少</div><h3>スクちゃん</h3><p class="kami-name">少彦名命</p><p>小さな体で知恵いっぱい。医薬、温泉、旅先の不思議な神社を案内します。</p><dl><dt>担当</dt><dd>医薬、温泉、知恵</dd><dt>好き</dt><dd>薬草、温泉、旅支度</dd></dl><a class="detail-button" href="character-suku.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar leaf">須</div><h3>スサくん</h3><p class="kami-name">素戔嗚尊</p><p>勢いのある熱血タイプ。厄除け、勝負運、荒ぶる神様の物語を力強く紹介します。</p><dl><dt>担当</dt><dd>厄除け、勝負運</dd><dt>好き</dt><dd>太鼓、強い風、剣の話</dd></dl><a class="detail-button" href="character-susa.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar brown">瀬</div><h3>セオちゃん</h3><p class="kami-name">瀬織津姫</p><p>清らかな流れをまとう水のキャラ。祓い、川、滝にまつわる神社雑学を担当します。</p><dl><dt>担当</dt><dd>祓い、水、清め</dd><dt>好き</dt><dd>川音、滝、白い布</dd></dl><a class="detail-button" href="character-seo.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar mint">月</div><h3>ツクちゃん</h3><p class="kami-name">月読尊</p><p>月と夜の静けさを愛する語り部。暦や夜空にまつわる神話を落ち着いて解説します。</p><dl><dt>担当</dt><dd>月、暦、夜の神話</dd><dt>好き</dt><dd>月明かり、静かな参道</dd></dl><a class="detail-button" href="character-tsuku.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar indigo">彦</div><h3>ヒコちゃん</h3><p class="kami-name">猿田彦大神</p><p>道案内が得意な先導役。旅、交通安全、ものごとの始まりを応援します。</p><dl><dt>担当</dt><dd>道開き、交通安全</dd><dt>好き</dt><dd>道標、旅の地図、朝の出発</dd></dl><a class="detail-button" href="character-hiko.html"><span>→</span>詳細</a></article>
-        <article class="character-card"><div class="avatar coral">山</div><h3>ヤマちゃん</h3><p class="kami-name">大山咋神</p><p>山と土地を守るおだやかなキャラ。日吉・日枝の神社や山の信仰を紹介します。</p><dl><dt>担当</dt><dd>山の守り、土地の信仰</dd><dt>好き</dt><dd>山道、清水、木漏れ日</dd></dl><a class="detail-button" href="character-yama.html"><span>→</span>詳細</a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img src="assets/amateru-face.jpeg" alt="アマテルちゃんの顔"></div><h3 data-i18n="amateruName">アマテルちゃん</h3><p class="kami-name" data-i18n="amateruKami">天照大御神</p><p data-i18n="amateruDesc">太陽みたいに明るい中心キャラ。神社の基本や、光にまつわる神話をやさしく案内します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="amateruRole">開運、神社の基本</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="amateruLike">朝日、鏡、きらきらしたもの</dd></dl><a class="detail-button" href="character-amateru.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img src="assets/ichi-face.jpeg" alt="イチちゃんの顔"></div><h3 data-i18n="ichiName">イチちゃん</h3><p class="kami-name" data-i18n="ichiKami">市杵嶋姫命</p><p data-i18n="ichiDesc">水辺と芸能にゆかりのある、上品で華やかなキャラ。弁天さまの話題も得意です。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="ichiRole">芸能、水の信仰</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="ichiLike">琵琶、湖、白い花</dd></dl><a class="detail-button" href="character-ichi.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="uka-avatar-img" src="assets/uka-face.jpeg" alt="ウカちゃんの顔"></div><h3 data-i18n="ukaName">ウカちゃん</h3><p class="kami-name" data-i18n="ukaKami">宇迦之御魂神</p><p data-i18n="ukaDesc">稲穂を大切にする商売繁盛の案内役。稲荷社や朱色の鳥居の豆知識を届けます。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="ukaRole">商売繁盛、五穀豊穣</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="ukaLike">稲穂、朱色の鳥居</dd></dl><a class="detail-button" href="character-uka.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img src="assets/uzume-face.jpeg" alt="ウズメちゃんの顔"></div><h3 data-i18n="uzumeName">ウズメちゃん</h3><p class="kami-name" data-i18n="uzumeKami">天鈿女命</p><p data-i18n="uzumeDesc">笑いと舞で場を明るくするムードメーカー。神楽や芸能の話を楽しく紹介します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="uzumeRole">芸能、神楽、笑い</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="uzumeLike">鈴、舞台、拍手</dd></dl><a class="detail-button" href="character-uzume.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img src="assets/ookuninushi-face.jpeg" alt="オオクニヌシの顔"></div><h3 data-i18n="ookuniName">オオクニヌシ</h3><p class="kami-name" data-i18n="ookuniKami">大国主命</p><p data-i18n="ookuniDesc">縁結びと国づくりに詳しい頼れる兄貴分。人と人をつなぐ話が得意です。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="ookuniRole">縁結び、国づくり</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="ookuniLike">出雲、白兎、結び紐</dd></dl><a class="detail-button" href="character-ookuninushi.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="kamo-avatar-img" src="assets/kamo-face.jpeg" alt="カモちゃんの顔"></div><h3 data-i18n="kamoName">カモちゃん</h3><p class="kami-name" data-i18n="kamoKami">賀茂別雷大神</p><p data-i18n="kamoDesc">雷のように元気な京都好きキャラ。賀茂社や厄除け、清めの話題で活躍します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="kamoRole">厄除け、雷の信仰</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="kamoLike">葵、清流、雷鳴</dd></dl><a class="detail-button" href="character-kamo.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="kukurin-avatar-img" src="assets/kukurin-face.jpeg" alt="くくりんの顔"></div><h3 data-i18n="kukurinName">くくりん</h3><p class="kami-name" data-i18n="kukurinKami">菊理媛</p><p data-i18n="kukurinDesc">ご縁や仲直りをそっと結ぶ聞き上手。白山信仰やむすびの雑学を担当します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="kukurinRole">縁結び、和合</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="kukurinLike">白山、結び目、静かな雪</dd></dl><a class="detail-button" href="character-kukurin.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="saku-avatar-img" src="assets/saku-face.jpeg" alt="サクちゃんの顔"></div><h3 data-i18n="sakuName">サクちゃん</h3><p class="kami-name" data-i18n="sakuKami">木花開耶姫命</p><p data-i18n="sakuDesc">桜のように華やかな山の姫キャラ。富士山、花、安産にまつわる話を届けます。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="sakuRole">山、花、安産</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="sakuLike">桜、富士山、春風</dd></dl><a class="detail-button" href="character-saku.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="suku-avatar-img" src="assets/suku-face.jpeg" alt="スクちゃんの顔"></div><h3 data-i18n="sukuName">スクちゃん</h3><p class="kami-name" data-i18n="sukuKami">少彦名命</p><p data-i18n="sukuDesc">小さな体で知恵いっぱい。医薬、温泉、旅先の不思議な神社を案内します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="sukuRole">医薬、温泉、知恵</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="sukuLike">薬草、温泉、旅支度</dd></dl><a class="detail-button" href="character-suku.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="susa-avatar-img" src="assets/susa-face.jpeg" alt="スサくんの顔"></div><h3 data-i18n="susaName">スサくん</h3><p class="kami-name" data-i18n="susaKami">素戔嗚尊</p><p data-i18n="susaDesc">勢いのある熱血タイプ。厄除け、勝負運、荒ぶる神様の物語を力強く紹介します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="susaRole">厄除け、勝負運</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="susaLike">太鼓、強い風、剣の話</dd></dl><a class="detail-button" href="character-susa.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="seo-avatar-img" src="assets/seo-face.jpeg" alt="セオちゃんのシルエット"></div><h3 data-i18n="seoName">セオちゃん</h3><p class="kami-name" data-i18n="seoKami">瀬織津姫</p><p data-i18n="seoDesc">清らかな流れをまとう水のキャラ。祓い、川、滝にまつわる神社雑学を担当します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="seoRole">祓い、水、清め</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="seoLike">川音、滝、白い布</dd></dl><a class="detail-button" href="character-seo.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="tsuku-avatar-img" src="assets/tsuku-face.jpeg" alt="ツクちゃんの顔"></div><h3 data-i18n="tsukuName">ツクちゃん</h3><p class="kami-name" data-i18n="tsukuKami">月読尊</p><p data-i18n="tsukuDesc">月と夜の静けさを愛する語り部。暦や夜空にまつわる神話を落ち着いて解説します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="tsukuRole">月、暦、夜の神話</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="tsukuLike">月明かり、静かな参道</dd></dl><a class="detail-button" href="character-tsuku.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="hiko-avatar-img" src="assets/hiko-face.jpeg" alt="ヒコちゃんの顔"></div><h3 data-i18n="hikoName">ヒコちゃん</h3><p class="kami-name" data-i18n="hikoKami">猿田彦大神</p><p data-i18n="hikoDesc">道案内が得意な先導役。旅、交通安全、ものごとの始まりを応援します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="hikoRole">道開き、交通安全</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="hikoLike">道標、旅の地図、朝の出発</dd></dl><a class="detail-button" href="character-hiko.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
+        <article class="character-card"><div class="avatar image-avatar"><img class="yama-avatar-img" src="assets/yama-face.jpeg" alt="ヤマちゃんの顔"></div><h3 data-i18n="yamaName">ヤマちゃん</h3><p class="kami-name" data-i18n="yamaKami">大山咋神</p><p data-i18n="yamaDesc">山と土地を守るおだやかなキャラ。日吉・日枝の神社や山の信仰を紹介します。</p><dl><dt data-i18n="roleLabel">担当</dt><dd data-i18n="yamaRole">山の守り、土地の信仰</dd><dt data-i18n="likeLabel">好き</dt><dd data-i18n="yamaLike">山道、清水、木漏れ日</dd></dl><a class="detail-button" href="character-yama.html"><span class="detail-icon">→</span><span class="detail-label" data-i18n="detailLabel">詳細</span></a></article>
       </div>
     </section>
 
     <section id="encyclopedia" class="section band">
-      <div class="section-heading"><p class="eyebrow">Kami Encyclopedia</p><h2>神様図鑑</h2><p>神ちゃまたちの、もとになった神様をまとめました。</p></div>
+      <div class="section-heading"><p class="eyebrow">Kami Encyclopedia</p><h2 data-i18n="encyclopediaTitle">神様図鑑</h2><p data-i18n="encyclopediaLead">神ちゃまたちの、もとになった神様をまとめました。</p></div>
       <div class="kami-grid">
-        <article class="kami-card"><span class="symbol">天</span><p class="tag">開運</p><h3>天照大御神</h3><p>アマテルちゃんのもとになった、太陽と光を象徴する神様です。</p></article>
-        <article class="kami-card"><span class="symbol">市</span><p class="tag">芸能</p><h3>市杵嶋姫命</h3><p>イチちゃんのもとになった、水辺や芸能にゆかりの深い神様です。</p></article>
-        <article class="kami-card"><span class="symbol">宇</span><p class="tag">商売</p><h3>宇迦之御魂神</h3><p>ウカちゃんのもとになった、稲荷信仰や五穀豊穣の神様です。</p></article>
-        <article class="kami-card"><span class="symbol">鈿</span><p class="tag">芸能</p><h3>天鈿女命</h3><p>ウズメちゃんのもとになった、舞や笑い、芸能にゆかりのある神様です。</p></article>
+        <article class="kami-card"><span class="symbol">天</span><p class="tag" data-i18n="luckTag">開運</p><h3 data-i18n="amateruKami">天照大御神</h3><p data-i18n="amateruKamiDesc">アマテルちゃんのもとになった、太陽と光を象徴する神様です。</p></article>
+        <article class="kami-card"><span class="symbol">市</span><p class="tag" data-i18n="artsTag">芸能</p><h3 data-i18n="ichiKami">市杵嶋姫命</h3><p data-i18n="ichiKamiDesc">イチちゃんのもとになった、水辺や芸能にゆかりの深い神様です。</p></article>
+        <article class="kami-card"><span class="symbol">宇</span><p class="tag" data-i18n="businessTag">商売</p><h3 data-i18n="ukaKami">宇迦之御魂神</h3><p data-i18n="ukaKamiDesc">ウカちゃんのもとになった、稲荷信仰や五穀豊穣の神様です。</p></article>
+        <article class="kami-card"><span class="symbol">鈿</span><p class="tag" data-i18n="artsTag">芸能</p><h3 data-i18n="uzumeKami">天鈿女命</h3><p data-i18n="uzumeKamiDesc">ウズメちゃんのもとになった、舞や笑い、芸能にゆかりのある神様です。</p></article>
       </div>
-      <p class="section-link"><a class="button primary" href="encyclopedia.html">図鑑ページを見る</a></p>
+      <p class="section-link"><a class="button primary" href="encyclopedia.html" data-i18n="viewEncyclopedia">図鑑ページを見る</a></p>
     </section>
 
-    <section id="youtube" class="section video-section"><div class="section-heading"><p class="eyebrow">YouTube</p><h2>最新動画</h2><p>公式動画IDに差し替えるだけで、そのまま埋め込み表示できます。</p></div><div class="video-shell"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_HERE" title="八百万の神ちゃま YouTube動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></section>
-    <section id="line" class="section line-section"><div class="line-copy"><p class="eyebrow">LINE Stickers</p><h2>神ちゃまのLINEスタンプ</h2><p>日常で使えるゆるい神社ことばをそろえたスタンプ紹介エリアです。</p><a class="button primary" href="https://store.line.me/stickershop/" target="_blank" rel="noreferrer">LINE STOREへ</a></div><div class="stamp-preview" aria-label="LINEスタンプのプレビュー"><div>ありがたや</div><div>おつかれじゃ</div><div>開運祈願</div><div>また来てね</div></div></section>
+    <section id="youtube" class="section video-section"><div class="section-heading"><p class="eyebrow">YouTube</p><h2 data-i18n="youtubeTitle">最新動画</h2><p data-i18n="youtubeLead">公式動画IDに差し替えるだけで、そのまま埋め込み表示できます。</p></div><div class="video-shell"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_HERE" title="八百万の神ちゃま YouTube動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></section>
+    <section id="line" class="section line-section"><div class="line-copy"><p class="eyebrow">LINE Stickers</p><h2 data-i18n="lineTitle">神ちゃまのLINEスタンプ</h2><p data-i18n="lineLead">日常で使えるゆるい神社ことばをそろえたスタンプ紹介エリアです。</p><a class="button primary" href="https://store.line.me/stickershop/author/6000506/ja" target="_blank" rel="noreferrer">LINE STORE</a></div><div class="stamp-preview" aria-label="LINEスタンプのプレビュー"><div data-i18n="stamp1">ありがたや</div><div data-i18n="stamp2">おつかれじゃ</div><div data-i18n="stamp3">開運祈願</div><div data-i18n="stamp4">また来てね</div></div></section>
   </main>
-  <footer class="site-footer"><strong>八百万の神ちゃま</strong><p>神社雑学系YouTubeチャンネル公式サイト</p><small>&copy; 八百万の神ちゃま</small></footer>
+  <footer class="site-footer"><strong data-i18n="brandName">八百万の神ちゃま</strong><p data-i18n="footerText">神社雑学系YouTubeチャンネル公式サイト</p><small>&copy; 八百万の神ちゃま</small></footer>
   <script src="script.js"></script>
 </body>
 </html>
+

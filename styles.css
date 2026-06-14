@@ -104,6 +104,33 @@ img {
   background: #f5f6f7;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 6px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.lang-button {
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.lang-button.active {
+  background: var(--vermillion);
+  color: #fff;
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -173,6 +200,13 @@ h1 {
   font-size: clamp(2.4rem, 7vw, 5.5rem);
   line-height: 1.04;
   letter-spacing: 0;
+}
+
+.hero-title {
+  width: min(760px, 100%);
+  margin-inline: auto;
+  font-size: clamp(2rem, 5.6vw, 4.4rem);
+  line-height: 1.16;
 }
 
 h2 {
@@ -346,6 +380,46 @@ h3 {
   object-position: 50% 23%;
 }
 
+.image-avatar img.uka-avatar-img {
+  object-position: 35% 31%;
+}
+
+.image-avatar img.kamo-avatar-img {
+  object-position: 52% 27%;
+}
+
+.image-avatar img.kukurin-avatar-img {
+  object-position: 50% 26%;
+}
+
+.image-avatar img.saku-avatar-img {
+  object-position: 49% 27%;
+}
+
+.image-avatar img.suku-avatar-img {
+  object-position: 52% 31%;
+}
+
+.image-avatar img.susa-avatar-img {
+  object-position: 50% 28%;
+}
+
+.image-avatar img.seo-avatar-img {
+  object-position: 50% 34%;
+}
+
+.image-avatar img.tsuku-avatar-img {
+  object-position: 50% 27%;
+}
+
+.image-avatar img.hiko-avatar-img {
+  object-position: 50% 28%;
+}
+
+.image-avatar img.yama-avatar-img {
+  object-position: 51% 27%;
+}
+
 .avatar.amber {
   background: linear-gradient(135deg, #d99327, #c7362d);
 }
@@ -514,7 +588,7 @@ dd {
   font-weight: 800;
 }
 
-.detail-button span {
+.detail-button .detail-icon {
   display: grid;
   place-items: center;
   width: 24px;
@@ -522,6 +596,11 @@ dd {
   border-radius: 50%;
   background: var(--vermillion);
   color: #fff;
+  line-height: 1;
+}
+
+.detail-button .detail-label {
+  color: inherit;
   line-height: 1;
 }
 
@@ -710,6 +789,13 @@ dd {
     border-radius: 8px;
   }
 
+  .language-switch {
+    width: 100%;
+    justify-content: center;
+    margin: 4px 0 0;
+    border-radius: 8px;
+  }
+
   .intro,
   .character-grid,
   .kami-grid,
@@ -722,6 +808,12 @@ dd {
 
   .section {
     padding-inline: 16px;
+  }
+
+  .hero-title {
+    width: min(360px, 100%);
+    font-size: clamp(1.8rem, 10vw, 2.65rem);
+    line-height: 1.18;
   }
 
   .character-card,
