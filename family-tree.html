@@ -13,86 +13,73 @@
   </header>
   <main class="detail-page">
     <section class="page-hero family-hero">
-      <p class="eyebrow">Kamichama Family Chart</p>
+      <p class="eyebrow">Kamichama Relationship Chart</p>
       <h1>神ちゃま家系図</h1>
-      <p>神話の流れを、神ちゃまたちのつながりとして見られる相関図です。</p>
+      <p>神話の流れや神ちゃまたちの関係を、相関図として楽しく見られるページです。</p>
     </section>
 
     <section class="section family-section">
       <div class="section-heading">
-        <p class="eyebrow">Myth Flow</p>
+        <p class="eyebrow">Myth Tree</p>
         <h2>神ちゃまたちのつながり</h2>
-        <p>古事記などの神話をもとに、家族関係・ゆかり・物語上のつながりをやさしく整理しています。</p>
+        <p>PCでは横に広がるツリー図、スマホでは横スクロールで見られます。未登場の神ちゃまはシークレット画像で仮置きしています。</p>
       </div>
 
-      <div class="family-board" aria-label="神ちゃま家系図">
-        <div class="family-row family-origin">
-          <article class="family-node pair">
-            <div class="node-avatar placeholder">祖</div>
+      <div class="tree-scroll" aria-label="神ちゃま相関図 横スクロールエリア">
+        <div class="tree-canvas">
+          <div class="tree-line trunk"></div>
+          <div class="tree-line top-left"></div>
+          <div class="tree-line top-right"></div>
+          <div class="tree-line sun-branch"></div>
+          <div class="tree-line susa-branch"></div>
+          <div class="tree-line earth-branch"></div>
+          <div class="tree-line future-branch"></div>
+
+          <article class="tree-node origin" style="--col: 4; --row: 1;">
+            <div class="tree-symbol">祖</div>
             <h3>イザナギ・イザナミ</h3>
-            <p>国生みと神生みのはじまり</p>
+            <p>神生みのはじまり</p>
           </article>
-        </div>
 
-        <div class="family-connector down"></div>
-
-        <div class="family-row family-three">
-          <article class="family-node main">
+          <article class="tree-node main" style="--col: 3; --row: 2;">
             <img src="assets/amateru-face.jpeg" alt="アマテルちゃん">
             <h3>アマテルちゃん</h3>
             <p>天照大御神</p>
           </article>
-          <article class="family-node main">
+          <article class="tree-node main" style="--col: 4; --row: 2;">
             <img src="assets/tsuku-face.jpeg" alt="ツクちゃん">
             <h3>ツクちゃん</h3>
             <p>月読尊</p>
           </article>
-          <article class="family-node main">
+          <article class="tree-node main" style="--col: 5; --row: 2;">
             <img src="assets/susa-face.jpeg" alt="スサくん">
             <h3>スサくん</h3>
             <p>素戔嗚尊</p>
           </article>
-        </div>
 
-        <div class="family-lanes">
-          <section class="family-lane sun">
-            <h3>天照大御神の流れ</h3>
-            <div class="lane-items">
-              <article class="family-node small"><img src="assets/saku-face.jpeg" alt="サクちゃん"><strong>サクちゃん</strong><span>木花開耶姫命</span></article>
-              <article class="family-node small"><img src="assets/hiko-face.jpeg" alt="ヒコちゃん"><strong>ヒコちゃん</strong><span>猿田彦大神</span></article>
-              <article class="family-node small"><img src="assets/uzume-face.jpeg" alt="ウズメちゃん"><strong>ウズメちゃん</strong><span>天鈿女命</span></article>
-            </div>
-          </section>
+          <div class="tree-label sun-label" style="--col: 2; --row: 3;">天照大御神の流れ</div>
+          <article class="tree-node" style="--col: 1; --row: 4;"><img src="assets/saku-face.jpeg" alt="サクちゃん"><h3>サクちゃん</h3><p>木花開耶姫命</p></article>
+          <article class="tree-node" style="--col: 2; --row: 4;"><img src="assets/hiko-face.jpeg" alt="ヒコちゃん"><h3>ヒコちゃん</h3><p>猿田彦大神</p></article>
+          <article class="tree-node" style="--col: 3; --row: 4;"><img src="assets/uzume-face.jpeg" alt="ウズメちゃん"><h3>ウズメちゃん</h3><p>天鈿女命</p></article>
 
-          <section class="family-lane sea">
-            <h3>スサくんから広がる物語</h3>
-            <div class="lane-items">
-              <article class="family-node small"><img src="assets/ookuninushi-face.jpeg" alt="オオクニヌシ"><strong>オオクニヌシ</strong><span>大国主命</span></article>
-              <article class="family-node small"><img src="assets/suku-face.jpeg" alt="スクちゃん"><strong>スクちゃん</strong><span>少彦名命</span></article>
-              <article class="family-node small secret"><img src="assets/seo-face.jpeg" alt="シークレットキャラ"><strong>？？？？</strong><span>？？？？</span></article>
-            </div>
-          </section>
+          <div class="tree-label susa-label" style="--col: 5; --row: 3;">スサくんから広がる物語</div>
+          <article class="tree-node" style="--col: 4; --row: 4;"><img src="assets/ookuninushi-face.jpeg" alt="オオクニヌシ"><h3>オオクニヌシ</h3><p>大国主命</p></article>
+          <article class="tree-node" style="--col: 5; --row: 4;"><img src="assets/suku-face.jpeg" alt="スクちゃん"><h3>スクちゃん</h3><p>少彦名命</p></article>
+          <article class="tree-node secret" style="--col: 6; --row: 4;"><img src="assets/seo-face.jpeg" alt="シークレットキャラ"><h3>？？？？</h3><p>？？？？</p></article>
 
-          <section class="family-lane earth">
-            <h3>神社で出会えるゆかりの神ちゃま</h3>
-            <div class="lane-items">
-              <article class="family-node small"><img src="assets/ichi-face.jpeg" alt="イチちゃん"><strong>イチちゃん</strong><span>市杵嶋姫命</span></article>
-              <article class="family-node small"><img src="assets/uka-face.jpeg" alt="ウカちゃん"><strong>ウカちゃん</strong><span>宇迦之御魂神</span></article>
-              <article class="family-node small"><img src="assets/kamo-face.jpeg" alt="カモちゃん"><strong>カモちゃん</strong><span>賀茂別雷大神</span></article>
-              <article class="family-node small"><img src="assets/kukurin-face.jpeg" alt="くくりん"><strong>くくりん</strong><span>菊理媛</span></article>
-              <article class="family-node small"><img src="assets/yama-face.jpeg" alt="ヤマちゃん"><strong>ヤマちゃん</strong><span>大山咋神</span></article>
-            </div>
-          </section>
+          <div class="tree-label earth-label" style="--col: 7; --row: 3;">神社で出会えるゆかり</div>
+          <article class="tree-node" style="--col: 7; --row: 4;"><img src="assets/ichi-face.jpeg" alt="イチちゃん"><h3>イチちゃん</h3><p>市杵嶋姫命</p></article>
+          <article class="tree-node" style="--col: 8; --row: 4;"><img src="assets/uka-face.jpeg" alt="ウカちゃん"><h3>ウカちゃん</h3><p>宇迦之御魂神</p></article>
+          <article class="tree-node" style="--col: 1; --row: 5;"><img src="assets/kamo-face.jpeg" alt="カモちゃん"><h3>カモちゃん</h3><p>賀茂別雷大神</p></article>
+          <article class="tree-node" style="--col: 2; --row: 5;"><img src="assets/kukurin-face.jpeg" alt="くくりん"><h3>くくりん</h3><p>菊理媛</p></article>
+          <article class="tree-node" style="--col: 3; --row: 5;"><img src="assets/yama-face.jpeg" alt="ヤマちゃん"><h3>ヤマちゃん</h3><p>大山咋神</p></article>
 
-          <section class="family-lane future">
-            <h3>これから登場する神ちゃま</h3>
-            <div class="lane-items">
-              <article class="family-node small future-node"><div class="node-avatar silhouette">?</div><strong>準備中</strong><span>神ちゃま追加予定</span></article>
-              <article class="family-node small future-node"><div class="node-avatar silhouette">?</div><strong>準備中</strong><span>神ちゃま追加予定</span></article>
-              <article class="family-node small future-node"><div class="node-avatar silhouette">?</div><strong>準備中</strong><span>神ちゃま追加予定</span></article>
-              <article class="family-node small future-node"><div class="node-avatar silhouette">?</div><strong>準備中</strong><span>神ちゃま追加予定</span></article>
-            </div>
-          </section>
+          <div class="tree-label future-label" style="--col: 6; --row: 5;">これから登場する神ちゃま</div>
+          <article class="tree-node future" style="--col: 4; --row: 6;"><img src="assets/seo-face.jpeg" alt="準備中"><h3>準備中</h3><p>神ちゃま追加予定</p></article>
+          <article class="tree-node future" style="--col: 5; --row: 6;"><img src="assets/seo-face.jpeg" alt="準備中"><h3>準備中</h3><p>神ちゃま追加予定</p></article>
+          <article class="tree-node future" style="--col: 6; --row: 6;"><img src="assets/seo-face.jpeg" alt="準備中"><h3>準備中</h3><p>神ちゃま追加予定</p></article>
+          <article class="tree-node future" style="--col: 7; --row: 6;"><img src="assets/seo-face.jpeg" alt="準備中"><h3>準備中</h3><p>神ちゃま追加予定</p></article>
+          <article class="tree-node future" style="--col: 8; --row: 6;"><img src="assets/seo-face.jpeg" alt="準備中"><h3>準備中</h3><p>神ちゃま追加予定</p></article>
         </div>
       </div>
 
