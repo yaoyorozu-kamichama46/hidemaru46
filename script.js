@@ -55,7 +55,7 @@ const translations = {
     intro2Title: "Stories of Kami",
     intro2Text: "An approachable gateway to mythology, folklore, and local beliefs.",
     intro3Title: "Visit Trivia",
-    intro3Text: "Tips and small discoveries that make shrine walks more fun.",
+    intro3Text: "Explore how the Kamichama are connected through a friendly family chart.",
     charactersTitle: "Kamichama Profiles",
     roleLabel: "Role",
     likeLabel: "Likes",

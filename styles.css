@@ -281,17 +281,31 @@ h3 {
   border-block: 1px solid var(--line);
 }
 
-.intro div {
+.intro div,
+.intro-card {
+  display: block;
   padding: clamp(22px, 4vw, 36px);
   background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
-.intro span {
+.intro-card:hover {
+  z-index: 1;
+  transform: translateY(-3px);
+  background: #fffdf8;
+  box-shadow: var(--shadow);
+}
+
+.intro span,
+.intro-card span {
   color: var(--gold);
   font-weight: 900;
 }
 
-.intro strong {
+.intro strong,
+.intro-card strong {
   display: block;
   margin-top: 6px;
   font-size: 1.16rem;
@@ -618,6 +632,183 @@ dd {
   line-height: 1;
 }
 
+.family-hero {
+  background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
+}
+
+.family-section {
+  background: #ffffff;
+}
+
+.family-board {
+  position: relative;
+  overflow: hidden;
+  margin-top: 28px;
+  padding: clamp(20px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(213, 178, 97, 0.12) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(213, 178, 97, 0.1) 1px, transparent 1px),
+    #fffdf9;
+  background-size: 42px 42px;
+  box-shadow: var(--shadow);
+}
+
+.family-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.family-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  align-items: stretch;
+}
+
+.family-connector {
+  width: 2px;
+  height: 34px;
+  margin: 8px auto;
+  background: var(--gold);
+}
+
+.family-node {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 8px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(213, 178, 97, 0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  text-align: center;
+}
+
+.family-node img,
+.node-avatar {
+  width: 86px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 18px rgba(32, 33, 36, 0.12);
+}
+
+.node-avatar {
+  display: grid;
+  place-items: center;
+  background: #d2342e;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.family-node h3,
+.family-node p,
+.family-node strong,
+.family-node span {
+  margin: 0;
+}
+
+.family-node h3,
+.family-node strong {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.family-node p,
+.family-node span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.family-node.main {
+  border-color: rgba(201, 54, 45, 0.35);
+  background: #fffafa;
+}
+
+.family-lanes {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.family-lane {
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.family-lane h3 {
+  margin: 0 0 14px;
+  color: var(--vermillion);
+  font-size: 1.05rem;
+}
+
+.family-lane.sun {
+  border-color: rgba(213, 178, 97, 0.55);
+}
+
+.family-lane.sea {
+  border-color: rgba(83, 147, 187, 0.35);
+}
+
+.family-lane.earth {
+  border-color: rgba(89, 148, 103, 0.35);
+}
+
+.family-lane.future {
+  border-style: dashed;
+  border-color: rgba(32, 33, 36, 0.16);
+  background: rgba(248, 248, 248, 0.82);
+}
+
+.lane-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.family-node.small {
+  padding: 14px 10px;
+}
+
+.family-node.small img {
+  width: 72px;
+}
+
+.family-node.secret {
+  background: #f8f8f8;
+}
+
+.future-node {
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.node-avatar.silhouette {
+  background:
+    radial-gradient(circle at 50% 35%, #8d8d8d 0 18%, transparent 19%),
+    radial-gradient(ellipse at 50% 76%, #8d8d8d 0 34%, transparent 35%),
+    #ececec;
+  color: #ffffff;
+  border-color: #f8f8f8;
+  font-size: 1.1rem;
+}
+
+.family-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .detail-page {
   background: #fff;
 }
@@ -837,5 +1028,17 @@ dd {
 
   .hero-actions .button {
     width: 100%;
+  }
+
+  .family-board {
+    padding: 16px;
+  }
+
+  .family-three {
+    grid-template-columns: 1fr;
+  }
+
+  .family-connector {
+    height: 22px;
   }
 }
