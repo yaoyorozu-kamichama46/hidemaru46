@@ -223,6 +223,10 @@ h1 {
   color: var(--vermillion);
 }
 
+.text-red {
+  color: var(--vermillion);
+}
+
 h2 {
   margin: 0;
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -271,6 +275,18 @@ h3 {
 .button.secondary {
   background: #fff;
   border-color: var(--line);
+}
+
+.line-store-button {
+  background: #06c755;
+  color: #fff;
+  border-color: #06c755;
+  box-shadow: 0 10px 22px rgba(6, 199, 85, 0.24);
+}
+
+.line-store-button:hover {
+  background: #05b84f;
+  border-color: #05b84f;
 }
 
 .intro {
